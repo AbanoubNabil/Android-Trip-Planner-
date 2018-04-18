@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.m1.tripproj.Activities.AddTripScreen"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/addTripLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/tripNameEditTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Trip name"
+                android:textSize="18sp"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:layout_margin="8dp"/>
+
+            <fragment
+                android:id="@+id/startPoint"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                android:layout_width="match_parent"
+                android:hint="start point"
+                android:textColorHint="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" />
+
+            <fragment
+                android:id="@+id/endPoint"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                android:layout_width="match_parent"
+                android:hint="end point"
+                android:textColorHint="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="8dp">
+
+                <EditText
+                    android:id="@+id/dateEditTxt"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/date_icon"
+                    android:drawablePadding="5dp"
+                    android:hint="Enter Date"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/colorAccent"/>
+
+                <EditText
+                    android:id="@+id/timeEditTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/time_icon"
+                    android:drawablePadding="5dp"
+                    android:hint="Enter Time"
+                    android:textSize="16sp"
+                    android:imeOptions="actionNext"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/tripTypeRadioGr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trip Type:"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:layout_margin="8dp"/>
+
+                <RadioButton
+                    android:id="@+id/oneDirectionType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trip_type_one_direction"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:layout_margin="8dp"/>
+
+                <RadioButton
+                    android:id="@+id/roundTripType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trip_type_round_trip"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:layout_margin="8dp"/>
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Type Notes here..."
+                android:id="@+id/notesEditTxt"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/colorAccent"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"/>
+
+            <Button
+                android:id ="@+id/addBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Trip"
+                android:background="@drawable/button_rounded_corners"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="18sp"
+                android:alpha="0.90"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

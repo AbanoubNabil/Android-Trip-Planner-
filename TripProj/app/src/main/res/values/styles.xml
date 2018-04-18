@@ -1,0 +1,48 @@
+<resources>
+
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">#268df4</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+        <style name="HeaderBar">
+            <item name="android:background">#268df4</item>
+        </style>
+
+
+        <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="MaterialSwitch">
+        <item name="sw_trackSize">30dp</item>
+        <item name="sw_trackCap">round</item>
+        <item name="sw_thumbRadius">16dp</item>
+        <item name="sw_thumbElevation">2dp</item>
+        <item name="sw_animDuration">@android:integer/config_shortAnimTime</item>
+        <item name="sw_interpolator">@android:anim/decelerate_interpolator</item>
+    </style>
+
+</resources>
+

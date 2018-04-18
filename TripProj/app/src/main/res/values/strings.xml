@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">TripProj</string>
+    <string name="trip_status_prompt">Upcoming</string>
+    <string-array name="trip_status_values">
+        <item>Upcoming</item>
+        <item>Done</item>
+        <item>Cancelled</item>
+    </string-array>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">Get started</string>
+
+    <string name="slide_1_title">Hello Traveler!</string>
+    <string name="slide_1_desc">Your personal travel guide!</string>
+
+    <string name="slide_2_title">Travel Anywhere</string>
+    <string name="slide_2_desc">Travel the world, yet keep track of your trip!</string>
+
+    <string name="slide_3_title">Relax!</string>
+    <string name="slide_3_desc">We\'ll remind you where to visit!</string>
+
+    <string name="slide_4_title">Excited?</string>
+    <string name="slide_4_desc">Let\'s get started!</string>
+
+    <string name="text_accounts">All Accounts</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="login_success">login success</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_hello">Hello,</string>
+    <string name="text_title">Android Tutorials Hub</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="loading">loading</string>
+    <string name="where_do_you_want_to_visit">Where do you want to visit</string>
+    <string name="search">Search</string>
+    <string name="trip_type_one_direction">One way</string>
+    <string name="trip_type_round_trip">Round Trip</string>
+
+</resources>

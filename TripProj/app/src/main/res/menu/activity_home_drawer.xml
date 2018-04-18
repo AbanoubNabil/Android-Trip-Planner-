@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_upcoming"
+            android:icon="@drawable/plane"
+            android:title="Upcoming Trips" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/nav_done_trips"
+            android:title="History Trips" />
+        <item
+            android:id="@+id/nav_cancelled"
+            android:icon="@drawable/cancelled_trips"
+            android:title="Cancelled Trips" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+    </group>
+
+    <item android:title="settings">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.m1.tripproj.Activities.DetailScreen"
+    android:background="@color/lightGrey">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/babyBlue"
+                android:layout_marginBottom="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:text="Trip Name: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1.25"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tripName"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/babyBlue"
+                android:layout_marginBottom="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:text="Start Point: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1.25"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tripStartPoint"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/babyBlue"
+                android:layout_marginBottom="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:text="End Point: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1.25"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tripEndPoint"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/babyBlue"
+                android:layout_marginBottom="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:text="Date/Time: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tripDate"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:color/transparent"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tripTime"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/babyBlue"
+                android:layout_marginBottom="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:text="Notes:"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:text="Note 1, Note 2, ..."
+                    android:id="@+id/tripNotes"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/babyBlue"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="Trip Status: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/tripStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:entries="@array/trip_status_values"
+                    android:padding="3dp"
+                    android:prompt="@string/trip_status_prompt"
+                    android:text="Upcoming" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/babyBlue"
+                android:layout_marginBottom="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:text="Direction: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1.25"
+                    android:layout_height="wrap_content"
+                    android:text="direction"
+                    android:id="@+id/tripDirection"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="30dp">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="40sp"
+                    android:text="Start"
+                    android:id="@+id/tripStart"
+                    android:background="@drawable/detail_buttons"
+                    android:textColor="#fff"
+                    android:layout_margin="2dp"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="40dp"
+                    android:text="Edit"
+                    android:id="@+id/tripEdit"
+                    android:background="@drawable/detail_buttons"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="Save Changes"
+                android:background="@drawable/detail_buttons"
+                android:id="@+id/saveChanges"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:alpha="0.9"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
